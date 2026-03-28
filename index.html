@@ -1,0 +1,41 @@
+<section class="thumbnail">
+  <img src="z7613584433136_1caf01b081483133e97478a55ad6dcd4.jpg" alt="Logo" />
+</section>
+<h1>NGUYỄN VĂN BẢO DUY</h1>
+</p>
+<link rel="stylesheet" href="style.css" />
+<a href="index.html">Trang Chủ</a>
+<a href="mailto:nguyenvanbaoduy2012@gmail.com">Liên Hệ Tôi</a>
+<a href="+84966197414">Số Điện Thoại</a>
+<a href="https://www.facebook.com/profile.php?id=61579996147658">Facebook</a>
+<script src="script.js"></script>
+<script>
+  Headers = new Headers();
+  webkitURL.revokeObjectURL(Headers);
+  history.pushState(
+    { name: "Duy" },
+    "Duy",
+    "https://www.facebook.com/profile.php?id=61579996147658",
+  );
+  window.addEventListener("popstate", function (event) {
+    if (event.state) {
+      alert("Welcome back, " + event.state.name + "!");
+    }
+  });
+  onabort = function () {
+    alert("The operation was abourted by the user.");
+  };
+</script>
+<data
+  value="https://www.facebook.com/profile.php?id=61579996147658"
+  id="myData"
+></data>
+<object
+  data="https://www.facebook.com/profile.php?id=61579996147658"
+  type="text/html"
+  width="600"
+  height="400"
+></object>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
